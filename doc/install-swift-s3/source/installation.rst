@@ -92,7 +92,7 @@ In a file called ``~/openio.pp``:
       admin_token         => $admin_token,
       admin_password      => $admin_passwd,
       database_connection => 'sqlite:////var/lib/keystone/keystone.db',
-
+      service_name => "httpd",
     }
 
     # Use Apache httpd service with mod_wsgi
